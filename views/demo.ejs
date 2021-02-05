@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Demo</title>
+    <link href="/assets/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>This is Demo Page</h1>
+    <%- include ('partials/nav.ejs') -%>
+        <h2>
+            <%= qs.name%>
+        </h2>
+
+        <form id="demoForm" method="POST" action="/demoAction">
+            <label>Email</label>
+            <input type="text" id="usermail" name="usermail" value="" />
+            <label>Password</label>
+            <input type="password" id="userpass" name="userpass" value="" />
+            <input type="submit" name="demoForm">
+        </form>
+</body>
+
+</html>
